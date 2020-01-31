@@ -9,6 +9,10 @@ Use this tool to quickly filter your Azure Blob Storage and easily download docu
 
 Use the name in the output to easily download the file.
 
+## How to compile
+
+It is straightforward to compile, just make sure that your Nuget has the setting Include prerelease on as it is using the preview of Azure.Storage.Files.DataLake.
+
 ## Help
 
 Please read the output of the tool for more details by just running AzureBlobTool.exe and specifying no input arguments, you should seem the following help output:
@@ -32,7 +36,11 @@ To filter on name (contains): AzureBlobTool.exe myStorageAccount UB98ahXbIDOoTVE
 To filter on date: AzureBlobTool.exe myStorageAccount UB98ahXbIDOoTVE7jOVkhlI6ryOcZXJWjMftaC6SRlCajKraKucYskCw+mh8lrsliLdV0Qz7+YXoOVEQGOAsAg== myFiles myDirectory -filterDate 2020-01-20
 To download a document: AzureBlobTool.exe myStorageAccount UB98ahXbIDOoTVE7jOVkhlI6ryOcZXJWjMftaC6SRlCajKraKucYskCw+mh8lrsliLdV0Qz7+YXoOVEQGOAsAg== myFiles myDirectory -download myDocumentName.json
 
-## Reason for existing
+### Reason for existing
 
-I created this tool as there is currently no way to filter Azure Blob Storage using Azure Storage Explorer. My Blob Storage has over 16000 files in there and it baecame a chore to load them all into cache to find one file. That is why the tool exists. It was a quick and dirty implementation and should be no means used for anything other than to quickly filter and download files from Azure Blob Storage. 
+I created this tool as there is currently no way to filter Azure Blob Storage using Azure Storage Explorer. My Blob Storage has over 16000 files in there and it baecame a chore to load them all into cache to find one file. That is why the tool exists. It was a quick and dirty implementation and should be by no means used for anything other than to quickly filter and download files from Azure Blob Storage. 
 
+
+## Contributions
+
+Please feel free to extend functionality. 
