@@ -32,9 +32,9 @@ filterDate: Filter files on the modified date being equal to the specified date 
 
 Examples:
 Please specify a command in the format: AzureBlobTool.exe <storageAccountName> <storageAccountKey> <fileSystemName> <directoryName> -<command> <additionalInfo>.
-To filter on name (contains): AzureBlobTool.exe myStorageAccount UB98ahXbIDOoTVE7jOVkhlI6ryOcZXJWjMftaC6SRlCajKraKucYskCw+mh8lrsliLdV0Qz7+YXoOVEQGOAsAg== myFiles myDirectory -filterNameContains foo
-To filter on date: AzureBlobTool.exe myStorageAccount UB98ahXbIDOoTVE7jOVkhlI6ryOcZXJWjMftaC6SRlCajKraKucYskCw+mh8lrsliLdV0Qz7+YXoOVEQGOAsAg== myFiles myDirectory -filterDate 2020-01-20
-To download a document: AzureBlobTool.exe myStorageAccount UB98ahXbIDOoTVE7jOVkhlI6ryOcZXJWjMftaC6SRlCajKraKucYskCw+mh8lrsliLdV0Qz7+YXoOVEQGOAsAg== myFiles myDirectory -download myDocumentName.json
+To filter on name (contains): AzureBlobTool.exe myStorageAccount UB98ahXbIDOoTVE7jOVkhlI6ryOcZXJMftaC6SRskCw+mh8lrsliLdV0Qz7+YXoOVOAsAg== myFiles myDirectory -filterNameContains foo
+To filter on date: AzureBlobTool.exe myStorageAccount UB98ahXbIDOoTVE7jOVhlI6ryZXJWjMftaC6SRlskCw+mh8lrsliLdV0Qz7+YXGOAsAg== myFiles myDirectory -filterDate 2020-01-20
+To download a document: AzureBlobTool.exe myStorageAccount UB98ahXbIDOoTVE7jOVkhlI6ryXJWjMftckCw+mh8lrsliLdV0Qz7+YXoOVOAsAg== myFiles myDirectory -download myDocumentName.json
 
 ### Reason for existing
 

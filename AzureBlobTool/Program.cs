@@ -34,11 +34,11 @@
           Console.WriteLine(
            "Please specify a command in the format: AzureBlobTool.exe <storageAccountName> <storageAccountKey> <fileSystemName> <directoryName> -<command> <additionalInfo>.");
           Console.WriteLine(
-           "To filter on name (contains): AzureBlobTool.exe myStorageAccount UB98ahXbIDOoTVE7jOVkhlI6ryOcZXJWjMftaC6SRlCajKraKucYskCw+mh8lrsliLdV0Qz7+YXoOVEQGOAsAg== myFiles myDirectory -filterNameContains foo");
+           "To filter on name (contains): AzureBlobTool.exe myStorageAccount UB11ahXbIDOoTVE7jOVkhlI6ryOcZXJWjMftaC6SRskCw+mh8lrsliLdV0Qz7+YYoOVEQGOAsAa== myFiles myDirectory -filterNameContains foo");
           Console.WriteLine(
-           "To filter on date: AzureBlobTool.exe myStorageAccount UB98ahXbIDOoTVE7jOVkhlI6ryOcZXJWjMftaC6SRlCajKraKucYskCw+mh8lrsliLdV0Qz7+YXoOVEQGOAsAg== myFiles myDirectory -filterDate 2020-01-20");
+           "To filter on date: AzureBlobTool.exe myStorageAccount UB11ahXbIDOoTVE7jOVkhlI6ryOcZXJWjMftaC6SRlCajKqaKrsliLdV0Qz7+YYoOVEQGOAsAa== myFiles myDirectory -filterDate 2020-01-20");
           Console.WriteLine(
-           "To download a document: AzureBlobTool.exe myStorageAccount UB98ahXbIDOoTVE7jOVkhlI6ryOcZXJWjMftaC6SRlCajKraKucYskCw+mh8lrsliLdV0Qz7+YXoOVEQGOAsAg== myFiles myDirectory -download myDocumentName.json");
+           "To download a document: AzureBlobTool.exe myStorageAccount UB11ahXbIDOoTVE7jOVkhlI6ryOcZXJWjMftaC6SRlCajKqaKsliLdV0Qz7+YYoOVEQGOAsAa== myFiles myDirectory -download myDocumentName.json");
           Console.WriteLine();
           return;
         }
