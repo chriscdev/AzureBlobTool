@@ -31,11 +31,23 @@ filterNameEndsWith: Filter files on the file name ending with the specified valu
 filterDate: Filter files on the modified date being equal to the specified date value
 
 Examples:
-Please specify a command in the format: AzureBlobTool.exe <storageAccountName> <storageAccountKey> <fileSystemName> <directoryName> -<command> <additionalInfo>.
-To filter on name (contains): AzureBlobTool.exe myStorageAccount UB98ahXbIDOoTVE7jOVkhlI6ryOcZXJMftaC6SRskCw+mh8lrsliLdV0Qz7+YXoOVOAsAg== myFiles myDirectory -filterNameContains foo
-To filter on date: AzureBlobTool.exe myStorageAccount UB98ahXbIDOoTVE7jOVhlI6ryZXJWjMftaC6SRlskCw+mh8lrsliLdV0Qz7+YXGOAsAg== myFiles myDirectory -filterDate 2020-01-20
-To download a document: AzureBlobTool.exe myStorageAccount UB98ahXbIDOoTVE7jOVkhlI6ryXJWjMftckCw+mh8lrsliLdV0Qz7+YXoOVOAsAg== myFiles myDirectory -download myDocumentName.json
-
+Please specify a command in the format: 
+```
+AzureBlobTool.exe <storageAccountName> <storageAccountKey> <fileSystemName> <directoryName> -<command> <additionalInfo>.
+```
+To filter on name (contains): 
+``` 
+AzureBlobTool.exe myStorageAccount UB98ahXbIDOoTVE7jOVkhlI6ryOcZXJMftaC6SRskCw+mh8lrsliLdV0Qz7+YXoOVOAsAg== myFiles myDirectory -filterNameContains foo
+```
+To filter on date: 
+```
+AzureBlobTool.exe myStorageAccount UB98ahXbIDOoTVE7jOVhlI6ryZXJWjMftaC6SRlskCw+mh8lrsliLdV0Qz7+YXGOAsAg== myFiles myDirectory -filterDate 2020-01-20
+```
+To download a document: 
+```
+AzureBlobTool.exe myStorageAccount UB98ahXbIDOoTVE7jOVkhlI6ryXJWjMftckCw+mh8lrsliLdV0Qz7+YXoOVOAsAg== myFiles myDirectory -download myDocumentName.json
+```
+  
 ### Reason for existing
 
 I created this tool as there is currently no way to filter Azure Blob Storage using Azure Storage Explorer. My Blob Storage has over 16000 files in there and it baecame a chore to load them all into cache to find one file. That is why the tool exists. It was a quick and dirty implementation and should be by no means used for anything other than to quickly filter and download files from Azure Blob Storage. 
